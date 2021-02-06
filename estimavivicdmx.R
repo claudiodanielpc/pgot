@@ -220,6 +220,9 @@ Fuente: ")%>%
 
 
 #Procedimiento para estimar parque de alcaldías----
+#Modelo 1
+#Supuesto: Participación de 2020 invariable
+
 
 #Seleccionar datos de 2019 a 2020
 
@@ -342,4 +345,10 @@ viviconsolalc%>%
            general_title = "
 Fuente: ")%>%
   as_image(file="estimacdmx/tablaalc.png")
+
+
+
+#Modelo 2
+#Supuesto: Cálculo de cada alcaldía y distribuir de acuerdo a la estimación general
+
 
