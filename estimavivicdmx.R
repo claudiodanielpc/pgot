@@ -9,7 +9,7 @@ setwd("C:/Users/ALIENWARE/Documents/ord territorial")
 dir.create("estimacdmx/")
 
 
-##Paquetería Necesaria
+##Paquetería necesaria
 
 if(!require('pacman')) install.packages('pacman')
 pacman::p_load(tidyverse, scales,kableExtra,webshot)
@@ -34,9 +34,12 @@ pobcdmx<-read.csv("https://raw.githubusercontent.com/claudiodanielpc/pgot/main/p
   filter(year<=2035)
 
 
-##Datos vivienda
+##Datos hogares y vivienda
 ##Generar copia para la distribución por alcaldía
 vivicdmxalc<-vivicdmx
+hogalc<-hogcdmx
+
+
 
 #Procedimiento para estimar el parque de Ciudad de México----
 vivicdmx<-vivicdmx %>% 
@@ -48,6 +51,7 @@ vivicdmx<-vivicdmx %>%
   group_by(year)%>%
   summarise(value=sum(value))
 
+
 ##Datos hogares
 hogcdmx<-hogcdmx %>% 
   gather(year, value, -nom_mun,-cve_mun)%>%
@@ -58,9 +62,12 @@ hogcdmx<-hogcdmx %>%
   group_by(year)%>%
   summarise(value=sum(value))
 
+
 ##Consolidar base de datos
 consol<-merge(vivicdmx, hogcdmx, by = "year")
 consol<-merge(consol,pobcdmx,by="year",all.y = TRUE)
+
+
 
 #Limpiar datos
 consol<-consol%>%
@@ -79,7 +86,6 @@ jef2035<-consol%>%
   select(year,tj)%>%
   #Supuesto: tasa de crecimiento de jefaturas de los últimos 10 años
   mutate(jef2035=(tj+(tj-lag(tj,1))))%>%
-  
   filter(year==2020)%>%
   select(jef2035)
 
@@ -121,6 +127,7 @@ hogvivi<-consol%>%
   filter(year==2020)%>%
   select(media)%>%
   as.numeric()
+
 
 #Usar la media calculada para obtener el parque estimado
 
@@ -348,7 +355,95 @@ Fuente: ")%>%
 
 
 
-#Modelo 2
+#Modelo 2-----
 #Supuesto: Cálculo de cada alcaldía y distribuir de acuerdo a la estimación general
+
+##Importar la población a 2035 a nivel alcaldía.
+#Nota: Las proyecciones de población de CONAPO a nivel municipio/alcaldía llegan a 2030
+#Para estimar la población a 2035, se obtuvo la tasa de crecmiento de la población
+#de cada una de las alcaldías de 2015 a 2020 y ese crecimiento, se aplicó a cada alcaldía
+
+
+pobalca<-read.csv("https://raw.githubusercontent.com/claudiodanielpc/pgot/main/pobla_alcaldia 2035.csv",
+                   encoding="latin",header=TRUE,check.names=FALSE)
+
+
+
+#
+hogalcx<-hogalc%>% 
+  gather(year, hog,-nom_mun,-cve_mun)%>%
+  mutate(year=as.numeric(year))%>%
+  ##Dejar datos a partir de 2000
+  filter(year>=2000)
+
+
+#
+pobalcax<-pobalca%>% 
+  gather(year, pob, -nom_mun,-cve_mun)%>%
+  mutate(year=as.numeric(year))%>%
+  ##Dejar datos a partir de 2000
+  filter(year>=2000)
+
+
+
+##Consolidar la población y hogares
+consolalc<-merge(hogalcx, pobalcax, by = c("cve_mun","nom_mun","year"),all.y = TRUE)%>%
+  #Calcular las tasas de jefatura
+  mutate(tj=hog/pob)
+
+#condición de cierre del período de estimación
+jefalc2035<-consolalc%>%
+  filter(year==2015 | year==2020)%>%
+  select(cve_mun,nom_mun,year,tj)%>%
+  group_by(cve_mun)%>%
+  #Supuesto: tasa de crecimiento de jefaturas de los últimos 10 años
+  mutate(jefalc2035=(tj+(tj-lag(tj,1))))%>%
+  ungroup()%>%
+  filter(year==2020)%>%
+  select(cve_mun,nom_mun,jefalc2035)%>%
+  rename(tj=jefalc2035)%>%
+  mutate(year=2035)
+
+
+
+##calcular tasa de jefatura de cierre
+
+consolalc<-merge(consolalc,jefalc2035, by=c("cve_mun","nom_mun","year"),all.y=TRUE,all.x = TRUE)%>%
+mutate(tj.x=ifelse(year==2035,tj.y,tj.x))%>%
+select (-c(tj.y))%>%
+  rename(tj=tj.x)
+
+
+##Crecimiento esperado de las tasas de jefatura
+crecjefalc<-consolalc%>%
+  select(-c(hog,pob))%>%
+  filter(year==2035| year==2020)%>%
+  group_by(cve_mun)%>%
+  mutate(growth=100*((tj/lag(tj,1))^(1/15)-1))%>%
+  ungroup()%>%
+  filter(year==2035)%>%
+  select(cve_mun,nom_mun,growth)
+
+consolalc<-merge(consolalc,crecjefalc, by=c("cve_mun","nom_mun"))%>%
+  arrange(cve_mun)
+
+#Funcíón para estimar tasas de jefatura de los periodos restantes
+consolalc$tjx<-consolalc$tj
+n=nrow(consolalc)
+
+for(i in 2:n){
+
+    if(is.na(consolalc$tjx[i])){
+    consolalc$tjx[i] = consolalc$tjx[i - 1] * (1+consolalc$growth[i]/100)
+  }
+}
+
+
+##Calcular hogares con las tasas estimadas
+consolalc<-consolalc%>%
+  mutate(hogx=pob*tjx)
+
+consolalc<-consolalc%>%group_by(year)%>%summarise(sum(hogx))
+
 
 
