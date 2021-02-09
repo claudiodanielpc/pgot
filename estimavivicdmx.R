@@ -136,6 +136,10 @@ consol<-consol%>%
   mutate(viviest=hog/mediahogviv,
          dif=viviest-lag(viviest))
 
+#Guardar copia para pegar posteriormente
+viviendas<-consol%>%
+  select(year,viviest)
+
 ##Arreglo de la base de datos para graficar resultado
 consol<-consol%>%
   mutate(vivi=ifelse(is.na(vivi),viviest,vivi))%>%
@@ -225,9 +229,7 @@ Fuente: ")%>%
   as_image(file="estimacdmx/tablacdmxcrec.png")
 
 
-
-#Procedimiento para estimar parque de alcaldías----
-#Modelo 1
+#Procedimiento para estimar parque de alcaldías: Modelo 1----
 #Supuesto: Participación de 2020 invariable
 
 
@@ -304,6 +306,34 @@ for (i in seq_along(lista_alc)) {
 }    
 
 
+viviconsolalc%>%
+  mutate(vivialc = ifelse((year>2010 & year<2015) | (year>2015 & year<2020),NA,vivialc))%>%
+  ggplot(.,aes(year,vivialc))+
+  geom_point(size=3)+ 
+  geom_vline(xintercept = 2021, linetype="dashed", 
+             color = "blue", size=1.5)+
+  scale_y_continuous("Número de viviendas",labels=comma)+
+  scale_x_continuous("Años",
+                     breaks = seq(from = 2010, to = 2035, by = 5))+
+  theme_bw()+
+  labs(
+    title =paste0("Viviendas particulares habitadas"),
+    subtitle = "2010-2035",
+    caption = "Nota: La línea vertical punteada indica el inicio de la proyección.\nFuente: Elaboración propia con datos de INEGI. Censos de Población y Vivienda y CONAPO.")+
+  theme(plot.title = element_text(hjust = 0, size=25,face="bold"),
+        plot.subtitle = element_text(hjust = 0, size=15, face="italic"),
+        plot.caption = element_text(hjust = 0,size=12),
+        legend.position = "bottom",
+        axis.text.x = element_text(angle = 90, vjust = 0.5),
+        text=element_text(size=20))+
+  facet_wrap(~ nom_mun, ncol=4, scale = "free_y")
+
+##Salvar
+ggsave("estimacdmx/acaldía1.png",
+       height=10, width=20, units='in', dpi=300)
+
+
+
 
 ##Tabla parque habitacional alcaldías----
 
@@ -314,7 +344,11 @@ viviconsolalc<-viviconsolalc%>%
   unite(new.col, c(key, year)) %>%   
   spread(new.col, vivialc)%>%
   #Columna de diferencia absoluta 2020-2035
-  mutate(diferencia=vivialc_2035-vivialc_2020)
+  mutate(dif1=vivialc_2025-vivialc_2020,
+         dif2=vivialc_2030-vivialc_2025,
+         dif3=vivialc_2035-vivialc_2030,
+         diferencia=vivialc_2035-vivialc_2020)
+
 #Filas de totales
 
 viviconsolalc<-viviconsolalc%>%
@@ -323,14 +357,20 @@ viviconsolalc<-viviconsolalc%>%
                         vivialc_2025=sum(vivialc_2025),
                         vivialc_2030=sum(vivialc_2030),
                         vivialc_2035=sum(vivialc_2035),
+                        dif1=vivialc_2025-vivialc_2020,
+                        dif2=vivialc_2030-vivialc_2025,
+                        dif3=vivialc_2035-vivialc_2030,
                         diferencia=sum(diferencia))%>%
               mutate(nom_mun="Total"))%>%
   ##Formato a números
-  
+  arrange(desc(diferencia))%>%
   mutate(vivialc_2020=format(round(vivialc_2020,0),big.mark = ","),
          vivialc_2025=format(round(vivialc_2025,0),big.mark = ","),
          vivialc_2030=format(round(vivialc_2030,0),big.mark = ","),
          vivialc_2035=format(round(vivialc_2035,0),big.mark = ","),
+         dif1=format(round(dif1,0),big.mark = ","),
+         dif2=format(round(dif2,0),big.mark = ","),
+         dif3=format(round(dif3,0),big.mark = ","),
          diferencia=format(round(diferencia,0),big.mark = ","))
 
 
@@ -345,9 +385,15 @@ viviconsolalc%>%
         align = "c",
         col.names = c("Alcaldía",
                       "2020","2025",
-                      "2030","2035", "Diferencia absoluta 2020-2035"))%>%
+                      "2030","2035", "Diferencia 2025-2020",
+                      "Diferencia 2030-2025",
+                      "Diferencia 2035-2030",
+                      "Diferencia absoluta 2020-2035"))%>%
   kable_styling(full_width = F)%>%
+  add_header_above(c(" "," "," "," "," ", "Variaciones" = 4),
+                   color="black",background="#addd8e")%>%
   row_spec(0, bold = F, color = "black", background = "#addd8e")%>%
+  row_spec(1:17, bold = F, color = "black", background = "white")%>%
   footnote(general = "Elaboración propia con datos de INEGI. Censos y Conteos de Población y Vivienda.",
            general_title = "
 Fuente: ")%>%
@@ -393,7 +439,7 @@ consolalc<-merge(hogalcx, pobalcax, by = c("cve_mun","nom_mun","year"),all.y = T
 
 #condición de cierre del período de estimación
 jefalc2035<-consolalc%>%
-  filter(year==2015 | year==2020)%>%
+  filter(year==2010 | year==2020)%>%
   select(cve_mun,nom_mun,year,tj)%>%
   group_by(cve_mun)%>%
   #Supuesto: tasa de crecimiento de jefaturas de los últimos 10 años
@@ -428,22 +474,152 @@ consolalc<-merge(consolalc,crecjefalc, by=c("cve_mun","nom_mun"))%>%
   arrange(cve_mun)
 
 #Funcíón para estimar tasas de jefatura de los periodos restantes
-consolalc$tjx<-consolalc$tj
 n=nrow(consolalc)
 
 for(i in 2:n){
 
-    if(is.na(consolalc$tjx[i])){
-    consolalc$tjx[i] = consolalc$tjx[i - 1] * (1+consolalc$growth[i]/100)
+    if(is.na(consolalc$tj[i])){
+    consolalc$tj[i] = consolalc$tj[i - 1] * (1+consolalc$growth[i]/100)
   }
 }
 
 
 ##Calcular hogares con las tasas estimadas
 consolalc<-consolalc%>%
-  mutate(hogx=pob*tjx)
+  mutate(hog=pob*tj)%>%
+  group_by(year)%>%
+  mutate(tot=sum(hog))%>%
+  ungroup()%>%
+  mutate(part=hog/tot)%>%
+  select(cve_mun,nom_mun,year,part)%>%
+  merge(.,viviendas, by="year")%>%
+  mutate(vivialc=part*viviest)
 
-consolalc<-consolalc%>%group_by(year)%>%summarise(sum(hogx))
+
+
+#Gráficas para cada una de las alcaldías----
+for (i in seq_along(lista_alc)) {
+  
+  
+  consolalc%>%
+    filter(nom_mun==lista_alc[i])%>%
+    ggplot(.,aes(year,vivialc))+
+    geom_point(size=6)+ 
+    geom_vline(xintercept = 2020, linetype="dashed", 
+               color = "blue", size=1.5)+
+    scale_y_continuous("Número de viviendas",labels=comma)+
+    scale_x_continuous("Años",
+                       breaks = seq(from = 2010, to = 2035, by = 5))+
+    theme_minimal()+
+    labs(
+      title =paste0(lista_alc[i],". ","Viviendas particulares habitadas"),
+      subtitle = "2010-2035",
+      caption = "Nota: La línea vertical punteada indica el inicio de la proyección.\nFuente: Elaboración propia con datos de INEGI. Censos de Población y Vivienda y CONAPO.")+
+    theme(plot.title = element_text(hjust = 0, size=25,face="bold"),
+          plot.subtitle = element_text(hjust = 0, size=15, face="italic"),
+          plot.caption = element_text(hjust = 0,size=12),
+          legend.position = "bottom",
+          axis.text.x = element_text(angle = 90, vjust = 0.5),
+          text=element_text(size=20))->p
+  
+  ##Salvar
+  ggsave(p,file=paste0("estimacdmx/",lista_alc[i],"x.png"),
+         height=10, width=20, units='in', dpi=300)
+}    
+
+
+consolalc%>%
+  mutate(vivialc = ifelse((year>2010 & year<2015) | (year>2015 & year<2020),NA,vivialc))%>%
+  ggplot(.,aes(year,vivialc))+
+  geom_point(size=3)+ 
+  geom_vline(xintercept = 2021, linetype="dashed", 
+             color = "blue", size=1.5)+
+  scale_y_continuous("Número de viviendas",labels=comma)+
+  scale_x_continuous("Años",
+                     breaks = seq(from = 2010, to = 2035, by = 5))+
+  theme_bw()+
+  labs(
+    title =paste0("Viviendas particulares habitadas"),
+    subtitle = "2010-2035",
+    caption = "Nota: La línea vertical punteada indica el inicio de la proyección.\nFuente: Elaboración propia con datos de INEGI. Censos de Población y Vivienda y CONAPO.")+
+  theme(plot.title = element_text(hjust = 0, size=25,face="bold"),
+        plot.subtitle = element_text(hjust = 0, size=15, face="italic"),
+        plot.caption = element_text(hjust = 0,size=12),
+        legend.position = "bottom",
+        axis.text.x = element_text(angle = 90, vjust = 0.5),
+        text=element_text(size=20))+
+  facet_wrap(~ nom_mun, ncol=4, scale = "free_y")
+
+##Salvar
+ggsave("estimacdmx/acaldía2.png",
+       height=10, width=20, units='in', dpi=300)
 
 
 
+
+##Tabla parque habitacional alcaldías----
+
+consolalc<-consolalc%>%
+  select(year,nom_mun,vivialc)%>%
+  gather(key, vivialc, -nom_mun, -year)%>% 
+  filter(year==2020 | year==2025 |year==2030 | year==2035)%>%
+  unite(new.col, c(key, year)) %>%   
+  spread(new.col, vivialc)%>%
+  #Columna de diferencia absoluta 2020-2035
+  mutate(dif1=vivialc_2025-vivialc_2020,
+         dif2=vivialc_2030-vivialc_2025,
+         dif3=vivialc_2035-vivialc_2030,
+        diferencia=vivialc_2035-vivialc_2020)
+#Filas de totales
+
+consolalc<-consolalc%>%
+  bind_rows(consolalc%>%
+              summarise(vivialc_2020=sum(vivialc_2020),
+                        vivialc_2025=sum(vivialc_2025),
+                        vivialc_2030=sum(vivialc_2030),
+                        vivialc_2035=sum(vivialc_2035),
+                        dif1=sum(dif1),
+                        dif2=sum(dif2),
+                        dif3=sum(dif3),
+                        diferencia=sum(diferencia))%>%
+              mutate(nom_mun="Total"))%>%
+  ##Formato a números
+arrange(desc(diferencia))%>%  
+  mutate(vivialc_2020=format(round(vivialc_2020,0),big.mark = ","),
+         vivialc_2025=format(round(vivialc_2025,0),big.mark = ","),
+         vivialc_2030=format(round(vivialc_2030,0),big.mark = ","),
+         vivialc_2035=format(round(vivialc_2035,0),big.mark = ","),
+         dif1=format(round(dif1,0),big.mark = ","),
+         dif2=format(round(dif2,0),big.mark = ","),
+         dif3=format(round(dif3,0),big.mark = ","),
+         diferencia=format(round(diferencia,0),big.mark = ","))
+
+
+
+
+consolalc%>%
+
+  ##Crear tabla
+  kable(caption='<h1 style="color:black;font-size:20px;"><b>Viviendas particulares habitadas por alcaldía</b></h><br>
+2020-2035<br>',
+        format="html",
+        align = "c",
+        col.names = c("Alcaldía",
+                      "2020","2025",
+                      "2030","2035", "Diferencia 2025-2020",
+                      "Diferencia
+                      2030-2025",
+                      "Diferencia
+                      2035-2030",
+                      "Diferencia absoluta
+                      2020-2035"))%>%
+  #column_spec(1:9,width = "30cm") %>%
+  add_header_above(c(" "," "," "," "," ", "Variaciones" = 4),
+                   color="black",background="#addd8e")%>%
+  kable_styling(full_width = F)%>%
+  row_spec(0, bold = F, color = "black", background = "#addd8e")%>%
+  row_spec(1:17, bold = F, color = "black", background = "white")%>%
+  footnote(general = "Elaboración propia con datos de INEGI. Censos y Conteos de Población y Vivienda.",
+           general_title = "
+Fuente: ")%>%
+  as_image(file="estimacdmx/tablaalc2.png")
