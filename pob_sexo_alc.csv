@@ -1,0 +1,673 @@
+nom_mun,year,gen,pob
+Álvaro Obregón,2015,Hombres,358767
+Álvaro Obregón,2015,Mujeres,393418
+Azcapotzalco,2015,Hombres,197278
+Azcapotzalco,2015,Mujeres,220390
+Benito Juárez,2015,Hombres,190010
+Benito Juárez,2015,Mujeres,224751
+Coyoacán,2015,Hombres,297522
+Coyoacán,2015,Mujeres,334990
+Cuajimalpa de Morelos,2015,Hombres,93271
+Cuajimalpa de Morelos,2015,Mujeres,101580
+Cuauhtémoc,2015,Hombres,257526
+Cuauhtémoc,2015,Mujeres,286118
+Gustavo A. Madero,2015,Hombres,576478
+Gustavo A. Madero,2015,Mujeres,622151
+Iztacalco,2015,Hombres,188903
+Iztacalco,2015,Mujeres,208913
+Iztapalapa,2015,Hombres,899221
+Iztapalapa,2015,Mujeres,949733
+La Magdalena Contreras,2015,Hombres,117649
+La Magdalena Contreras,2015,Mujeres,127136
+Miguel Hidalgo,2015,Hombres,173003
+Miguel Hidalgo,2015,Mujeres,201776
+Milpa Alta,2015,Hombres,66188
+Milpa Alta,2015,Mujeres,69084
+Tláhuac,2015,Hombres,176935
+Tláhuac,2015,Mujeres,189739
+Tlalpan,2015,Hombres,323351
+Tlalpan,2015,Mujeres,350568
+Venustiano Carranza,2015,Hombres,208090
+Venustiano Carranza,2015,Mujeres,232502
+Xochimilco,2015,Hombres,207257
+Xochimilco,2015,Mujeres,214436
+Álvaro Obregón,2016,Hombres,359325
+Álvaro Obregón,2016,Mujeres,394135
+Azcapotzalco,2016,Hombres,196019
+Azcapotzalco,2016,Mujeres,219370
+Benito Juárez,2016,Hombres,192168
+Benito Juárez,2016,Mujeres,226700
+Coyoacán,2016,Hombres,296282
+Coyoacán,2016,Mujeres,333767
+Cuajimalpa de Morelos,2016,Hombres,94001
+Cuajimalpa de Morelos,2016,Mujeres,102328
+Cuauhtémoc,2016,Hombres,258136
+Cuauhtémoc,2016,Mujeres,286469
+Gustavo A. Madero,2016,Hombres,573884
+Gustavo A. Madero,2016,Mujeres,619763
+Iztacalco,2016,Hombres,188320
+Iztacalco,2016,Mujeres,208474
+Iztapalapa,2016,Hombres,895968
+Iztapalapa,2016,Mujeres,947347
+La Magdalena Contreras,2016,Hombres,117806
+La Magdalena Contreras,2016,Mujeres,127297
+Miguel Hidalgo,2016,Hombres,173527
+Miguel Hidalgo,2016,Mujeres,202198
+Milpa Alta,2016,Hombres,66775
+Milpa Alta,2016,Mujeres,69747
+Tláhuac,2016,Hombres,177178
+Tláhuac,2016,Mujeres,190194
+Tlalpan,2016,Hombres,324463
+Tlalpan,2016,Mujeres,352134
+Venustiano Carranza,2016,Hombres,207072
+Venustiano Carranza,2016,Mujeres,231598
+Xochimilco,2016,Hombres,207077
+Xochimilco,2016,Mujeres,214468
+Álvaro Obregón,2017,Hombres,359860
+Álvaro Obregón,2017,Mujeres,394721
+Azcapotzalco,2017,Hombres,194905
+Azcapotzalco,2017,Mujeres,218452
+Benito Juárez,2017,Hombres,194276
+Benito Juárez,2017,Mujeres,228606
+Coyoacán,2017,Hombres,295149
+Coyoacán,2017,Mujeres,332626
+Cuajimalpa de Morelos,2017,Hombres,94669
+Cuajimalpa de Morelos,2017,Mujeres,102960
+Cuauhtémoc,2017,Hombres,258810
+Cuauhtémoc,2017,Mujeres,286865
+Gustavo A. Madero,2017,Hombres,571565
+Gustavo A. Madero,2017,Mujeres,617565
+Iztacalco,2017,Hombres,187841
+Iztacalco,2017,Mujeres,208098
+Iztapalapa,2017,Hombres,892770
+Iztapalapa,2017,Mujeres,944726
+La Magdalena Contreras,2017,Hombres,117946
+La Magdalena Contreras,2017,Mujeres,127409
+Miguel Hidalgo,2017,Hombres,174098
+Miguel Hidalgo,2017,Mujeres,202643
+Milpa Alta,2017,Hombres,67291
+Milpa Alta,2017,Mujeres,70312
+Tláhuac,2017,Hombres,177329
+Tláhuac,2017,Mujeres,190481
+Tlalpan,2017,Hombres,325445
+Tlalpan,2017,Mujeres,353458
+Venustiano Carranza,2017,Hombres,206199
+Venustiano Carranza,2017,Mujeres,230823
+Xochimilco,2017,Hombres,206819
+Xochimilco,2017,Mujeres,214369
+Álvaro Obregón,2018,Hombres,360195
+Álvaro Obregón,2018,Mujeres,395104
+Azcapotzalco,2018,Hombres,193871
+Azcapotzalco,2018,Mujeres,217632
+Benito Juárez,2018,Hombres,196261
+Benito Juárez,2018,Mujeres,230468
+Coyoacán,2018,Hombres,294059
+Coyoacán,2018,Mujeres,331575
+Cuajimalpa de Morelos,2018,Hombres,95205
+Cuajimalpa de Morelos,2018,Mujeres,103442
+Cuauhtémoc,2018,Hombres,259430
+Cuauhtémoc,2018,Mujeres,287283
+Gustavo A. Madero,2018,Hombres,569313
+Gustavo A. Madero,2018,Mujeres,615488
+Iztacalco,2018,Hombres,187390
+Iztacalco,2018,Mujeres,207763
+Iztapalapa,2018,Hombres,889177
+Iztapalapa,2018,Mujeres,941658
+La Magdalena Contreras,2018,Hombres,118002
+La Magdalena Contreras,2018,Mujeres,127443
+Miguel Hidalgo,2018,Hombres,174638
+Miguel Hidalgo,2018,Mujeres,203099
+Milpa Alta,2018,Hombres,67689
+Milpa Alta,2018,Mujeres,70752
+Tláhuac,2018,Hombres,177274
+Tláhuac,2018,Mujeres,190540
+Tlalpan,2018,Hombres,326142
+Tlalpan,2018,Mujeres,354475
+Venustiano Carranza,2018,Hombres,205407
+Venustiano Carranza,2018,Mujeres,230149
+Xochimilco,2018,Hombres,206375
+Xochimilco,2018,Mujeres,214096
+Álvaro Obregón,2019,Hombres,360335
+Álvaro Obregón,2019,Mujeres,395285
+Azcapotzalco,2019,Hombres,192944
+Azcapotzalco,2019,Mujeres,216916
+Benito Juárez,2019,Hombres,198095
+Benito Juárez,2019,Mujeres,232259
+Coyoacán,2019,Hombres,293039
+Coyoacán,2019,Mujeres,330644
+Cuajimalpa de Morelos,2019,Hombres,95608
+Cuajimalpa de Morelos,2019,Mujeres,103772
+Cuauhtémoc,2019,Hombres,259989
+Cuauhtémoc,2019,Mujeres,287714
+Gustavo A. Madero,2019,Hombres,567165
+Gustavo A. Madero,2019,Mujeres,613564
+Iztacalco,2019,Hombres,186979
+Iztacalco,2019,Mujeres,207469
+Iztapalapa,2019,Hombres,885252
+Iztapalapa,2019,Mujeres,938216
+La Magdalena Contreras,2019,Hombres,117979
+La Magdalena Contreras,2019,Mujeres,127396
+Miguel Hidalgo,2019,Hombres,175144
+Miguel Hidalgo,2019,Mujeres,203564
+Milpa Alta,2019,Hombres,67969
+Milpa Alta,2019,Mujeres,71066
+Tláhuac,2019,Hombres,177029
+Tláhuac,2019,Mujeres,190377
+Tlalpan,2019,Hombres,326554
+Tlalpan,2019,Mujeres,355174
+Venustiano Carranza,2019,Hombres,204702
+Venustiano Carranza,2019,Mujeres,229588
+Xochimilco,2019,Hombres,205763
+Xochimilco,2019,Mujeres,213663
+Álvaro Obregón,2020,Hombres,360280
+Álvaro Obregón,2020,Mujeres,395257
+Azcapotzalco,2020,Hombres,192126
+Azcapotzalco,2020,Mujeres,216315
+Benito Juárez,2020,Hombres,199754
+Benito Juárez,2020,Mujeres,233954
+Coyoacán,2020,Hombres,292111
+Coyoacán,2020,Mujeres,329841
+Cuajimalpa de Morelos,2020,Hombres,95869
+Cuajimalpa de Morelos,2020,Mujeres,103940
+Cuauhtémoc,2020,Hombres,260463
+Cuauhtémoc,2020,Mujeres,288143
+Gustavo A. Madero,2020,Hombres,565150
+Gustavo A. Madero,2020,Mujeres,611817
+Iztacalco,2020,Hombres,186604
+Iztacalco,2020,Mujeres,207217
+Iztapalapa,2020,Hombres,881091
+Iztapalapa,2020,Mujeres,934460
+La Magdalena Contreras,2020,Hombres,117879
+La Magdalena Contreras,2020,Mujeres,127268
+Miguel Hidalgo,2020,Hombres,175605
+Miguel Hidalgo,2020,Mujeres,204019
+Milpa Alta,2020,Hombres,68127
+Milpa Alta,2020,Mujeres,71244
+Tláhuac,2020,Hombres,176595
+Tláhuac,2020,Mujeres,189991
+Tlalpan,2020,Hombres,326680
+Tlalpan,2020,Mujeres,355554
+Venustiano Carranza,2020,Hombres,204087
+Venustiano Carranza,2020,Mujeres,229144
+Xochimilco,2020,Hombres,204989
+Xochimilco,2020,Mujeres,213071
+Álvaro Obregón,2021,Hombres,360028
+Álvaro Obregón,2021,Mujeres,395018
+Azcapotzalco,2021,Hombres,191438
+Azcapotzalco,2021,Mujeres,215842
+Benito Juárez,2021,Hombres,201203
+Benito Juárez,2021,Mujeres,235534
+Coyoacán,2021,Hombres,291287
+Coyoacán,2021,Mujeres,329199
+Cuajimalpa de Morelos,2021,Hombres,95983
+Cuajimalpa de Morelos,2021,Mujeres,103943
+Cuauhtémoc,2021,Hombres,260840
+Cuauhtémoc,2021,Mujeres,288556
+Gustavo A. Madero,2021,Hombres,563297
+Gustavo A. Madero,2021,Mujeres,610258
+Iztacalco,2021,Hombres,186270
+Iztacalco,2021,Mujeres,207005
+Iztapalapa,2021,Hombres,876717
+Iztapalapa,2021,Mujeres,930416
+La Magdalena Contreras,2021,Hombres,117705
+La Magdalena Contreras,2021,Mujeres,127064
+Miguel Hidalgo,2021,Hombres,176001
+Miguel Hidalgo,2021,Mujeres,204464
+Milpa Alta,2021,Hombres,68160
+Milpa Alta,2021,Mujeres,71281
+Tláhuac,2021,Hombres,175992
+Tláhuac,2021,Mujeres,189394
+Tlalpan,2021,Hombres,326516
+Tlalpan,2021,Mujeres,355605
+Venustiano Carranza,2021,Hombres,203571
+Venustiano Carranza,2021,Mujeres,228821
+Xochimilco,2021,Hombres,204078
+Xochimilco,2021,Mujeres,212341
+Álvaro Obregón,2022,Hombres,359576
+Álvaro Obregón,2022,Mujeres,394565
+Azcapotzalco,2022,Hombres,190887
+Azcapotzalco,2022,Mujeres,215500
+Benito Juárez,2022,Hombres,202416
+Benito Juárez,2022,Mujeres,236972
+Coyoacán,2022,Hombres,290587
+Coyoacán,2022,Mujeres,328726
+Cuajimalpa de Morelos,2022,Hombres,95949
+Cuajimalpa de Morelos,2022,Mujeres,103769
+Cuauhtémoc,2022,Hombres,261094
+Cuauhtémoc,2022,Mujeres,288933
+Gustavo A. Madero,2022,Hombres,561620
+Gustavo A. Madero,2022,Mujeres,608917
+Iztacalco,2022,Hombres,185984
+Iztacalco,2022,Mujeres,206833
+Iztapalapa,2022,Hombres,872181
+Iztapalapa,2022,Mujeres,926122
+La Magdalena Contreras,2022,Hombres,117455
+La Magdalena Contreras,2022,Mujeres,126780
+Miguel Hidalgo,2022,Hombres,176320
+Miguel Hidalgo,2022,Mujeres,204876
+Milpa Alta,2022,Hombres,68064
+Milpa Alta,2022,Mujeres,71177
+Tláhuac,2022,Hombres,175218
+Tláhuac,2022,Mujeres,188589
+Tlalpan,2022,Hombres,326064
+Tlalpan,2022,Mujeres,355322
+Venustiano Carranza,2022,Hombres,203150
+Venustiano Carranza,2022,Mujeres,228621
+Xochimilco,2022,Hombres,203030
+Xochimilco,2022,Mujeres,211477
+Álvaro Obregón,2023,Hombres,358915
+Álvaro Obregón,2023,Mujeres,393885
+Azcapotzalco,2023,Hombres,190482
+Azcapotzalco,2023,Mujeres,215299
+Benito Juárez,2023,Hombres,203362
+Benito Juárez,2023,Mujeres,238239
+Coyoacán,2023,Hombres,290025
+Coyoacán,2023,Mujeres,328441
+Cuajimalpa de Morelos,2023,Hombres,95758
+Cuajimalpa de Morelos,2023,Mujeres,103417
+Cuauhtémoc,2023,Hombres,261211
+Cuauhtémoc,2023,Mujeres,289259
+Gustavo A. Madero,2023,Hombres,560140
+Gustavo A. Madero,2023,Mujeres,607801
+Iztacalco,2023,Hombres,185736
+Iztacalco,2023,Mujeres,206705
+Iztapalapa,2023,Hombres,867546
+Iztapalapa,2023,Mujeres,921639
+La Magdalena Contreras,2023,Hombres,117130
+La Magdalena Contreras,2023,Mujeres,126420
+Miguel Hidalgo,2023,Hombres,176556
+Miguel Hidalgo,2023,Mujeres,205251
+Milpa Alta,2023,Hombres,67834
+Milpa Alta,2023,Mujeres,70919
+Tláhuac,2023,Hombres,174278
+Tláhuac,2023,Mujeres,187582
+Tlalpan,2023,Hombres,325310
+Tlalpan,2023,Mujeres,354691
+Venustiano Carranza,2023,Hombres,202831
+Venustiano Carranza,2023,Mujeres,228548
+Xochimilco,2023,Hombres,201855
+Xochimilco,2023,Mujeres,210493
+Álvaro Obregón,2024,Hombres,358037
+Álvaro Obregón,2024,Mujeres,392975
+Azcapotzalco,2024,Hombres,190228
+Azcapotzalco,2024,Mujeres,215248
+Benito Juárez,2024,Hombres,204014
+Benito Juárez,2024,Mujeres,239319
+Coyoacán,2024,Hombres,289614
+Coyoacán,2024,Mujeres,328363
+Cuajimalpa de Morelos,2024,Hombres,95401
+Cuajimalpa de Morelos,2024,Mujeres,102870
+Cuauhtémoc,2024,Hombres,261178
+Cuauhtémoc,2024,Mujeres,289530
+Gustavo A. Madero,2024,Hombres,558879
+Gustavo A. Madero,2024,Mujeres,606920
+Iztacalco,2024,Hombres,185531
+Iztacalco,2024,Mujeres,206612
+Iztapalapa,2024,Hombres,862852
+Iztapalapa,2024,Mujeres,916984
+La Magdalena Contreras,2024,Hombres,116721
+La Magdalena Contreras,2024,Mujeres,125976
+Miguel Hidalgo,2024,Hombres,176694
+Miguel Hidalgo,2024,Mujeres,205582
+Milpa Alta,2024,Hombres,67467
+Milpa Alta,2024,Mujeres,70505
+Tláhuac,2024,Hombres,173186
+Tláhuac,2024,Mujeres,186370
+Tlalpan,2024,Hombres,324252
+Tlalpan,2024,Mujeres,353704
+Venustiano Carranza,2024,Hombres,202618
+Venustiano Carranza,2024,Mujeres,228598
+Xochimilco,2024,Hombres,200569
+Xochimilco,2024,Mujeres,209387
+Álvaro Obregón,2025,Hombres,356938
+Álvaro Obregón,2025,Mujeres,391813
+Azcapotzalco,2025,Hombres,190142
+Azcapotzalco,2025,Mujeres,215354
+Benito Juárez,2025,Hombres,204344
+Benito Juárez,2025,Mujeres,240190
+Coyoacán,2025,Hombres,289374
+Coyoacán,2025,Mujeres,328503
+Cuajimalpa de Morelos,2025,Hombres,94875
+Cuajimalpa de Morelos,2025,Mujeres,102132
+Cuauhtémoc,2025,Hombres,260981
+Cuauhtémoc,2025,Mujeres,289729
+Gustavo A. Madero,2025,Hombres,557852
+Gustavo A. Madero,2025,Mujeres,606298
+Iztacalco,2025,Hombres,185366
+Iztacalco,2025,Mujeres,206555
+Iztapalapa,2025,Hombres,858166
+Iztapalapa,2025,Mujeres,912192
+La Magdalena Contreras,2025,Hombres,116235
+La Magdalena Contreras,2025,Mujeres,125449
+Miguel Hidalgo,2025,Hombres,176719
+Miguel Hidalgo,2025,Mujeres,205854
+Milpa Alta,2025,Hombres,66953
+Milpa Alta,2025,Mujeres,69926
+Tláhuac,2025,Hombres,171933
+Tláhuac,2025,Mujeres,184951
+Tlalpan,2025,Hombres,322877
+Tlalpan,2025,Mujeres,352346
+Venustiano Carranza,2025,Hombres,202503
+Venustiano Carranza,2025,Mujeres,228776
+Xochimilco,2025,Hombres,199175
+Xochimilco,2025,Mujeres,208173
+Álvaro Obregón,2026,Hombres,355611
+Álvaro Obregón,2026,Mujeres,390399
+Azcapotzalco,2026,Hombres,190228
+Azcapotzalco,2026,Mujeres,215624
+Benito Juárez,2026,Hombres,204333
+Benito Juárez,2026,Mujeres,240814
+Coyoacán,2026,Hombres,289316
+Coyoacán,2026,Mujeres,328888
+Cuajimalpa de Morelos,2026,Hombres,94169
+Cuajimalpa de Morelos,2026,Mujeres,101183
+Cuauhtémoc,2026,Hombres,260603
+Cuauhtémoc,2026,Mujeres,289837
+Gustavo A. Madero,2026,Hombres,557076
+Gustavo A. Madero,2026,Mujeres,605937
+Iztacalco,2026,Hombres,185241
+Iztacalco,2026,Mujeres,206532
+Iztapalapa,2026,Hombres,853518
+Iztapalapa,2026,Mujeres,907323
+La Magdalena Contreras,2026,Hombres,115668
+La Magdalena Contreras,2026,Mujeres,124831
+Miguel Hidalgo,2026,Hombres,176621
+Miguel Hidalgo,2026,Mujeres,206059
+Milpa Alta,2026,Hombres,66289
+Milpa Alta,2026,Mujeres,69171
+Tláhuac,2026,Hombres,170536
+Tláhuac,2026,Mujeres,183330
+Tlalpan,2026,Hombres,321184
+Tlalpan,2026,Mujeres,350609
+Venustiano Carranza,2026,Hombres,202500
+Venustiano Carranza,2026,Mujeres,229081
+Xochimilco,2026,Hombres,197685
+Xochimilco,2026,Mujeres,206853
+Álvaro Obregón,2027,Hombres,354043
+Álvaro Obregón,2027,Mujeres,388713
+Azcapotzalco,2027,Hombres,190496
+Azcapotzalco,2027,Mujeres,216064
+Benito Juárez,2027,Hombres,203945
+Benito Juárez,2027,Mujeres,241171
+Coyoacán,2027,Hombres,289469
+Coyoacán,2027,Mujeres,329531
+Cuajimalpa de Morelos,2027,Hombres,93281
+Cuajimalpa de Morelos,2027,Mujeres,100025
+Cuauhtémoc,2027,Hombres,260031
+Cuauhtémoc,2027,Mujeres,289842
+Gustavo A. Madero,2027,Hombres,556574
+Gustavo A. Madero,2027,Mujeres,605861
+Iztacalco,2027,Hombres,185160
+Iztacalco,2027,Mujeres,206541
+Iztapalapa,2027,Hombres,848929
+Iztapalapa,2027,Mujeres,902375
+La Magdalena Contreras,2027,Hombres,115023
+La Magdalena Contreras,2027,Mujeres,124132
+Miguel Hidalgo,2027,Hombres,176394
+Miguel Hidalgo,2027,Mujeres,206184
+Milpa Alta,2027,Hombres,65472
+Milpa Alta,2027,Mujeres,68241
+Tláhuac,2027,Hombres,168994
+Tláhuac,2027,Mujeres,181519
+Tlalpan,2027,Hombres,319157
+Tlalpan,2027,Mujeres,348477
+Venustiano Carranza,2027,Hombres,202607
+Venustiano Carranza,2027,Mujeres,229519
+Xochimilco,2027,Hombres,196111
+Xochimilco,2027,Mujeres,205437
+Álvaro Obregón,2028,Hombres,352233
+Álvaro Obregón,2028,Mujeres,386747
+Azcapotzalco,2028,Hombres,190956
+Azcapotzalco,2028,Mujeres,216687
+Benito Juárez,2028,Hombres,203160
+Benito Juárez,2028,Mujeres,241241
+Coyoacán,2028,Hombres,289835
+Coyoacán,2028,Mujeres,330448
+Cuajimalpa de Morelos,2028,Hombres,92196
+Cuajimalpa de Morelos,2028,Mujeres,98641
+Cuauhtémoc,2028,Hombres,259253
+Cuauhtémoc,2028,Mujeres,289732
+Gustavo A. Madero,2028,Hombres,556346
+Gustavo A. Madero,2028,Mujeres,606084
+Iztacalco,2028,Hombres,185112
+Iztacalco,2028,Mujeres,206577
+Iztapalapa,2028,Hombres,844500
+Iztapalapa,2028,Mujeres,897400
+La Magdalena Contreras,2028,Hombres,114291
+La Magdalena Contreras,2028,Mujeres,123340
+Miguel Hidalgo,2028,Hombres,176017
+Miguel Hidalgo,2028,Mujeres,206216
+Milpa Alta,2028,Hombres,64494
+Milpa Alta,2028,Mujeres,67131
+Tláhuac,2028,Hombres,167302
+Tláhuac,2028,Mujeres,179501
+Tlalpan,2028,Hombres,316794
+Tlalpan,2028,Mujeres,345938
+Venustiano Carranza,2028,Hombres,202822
+Venustiano Carranza,2028,Mujeres,230085
+Xochimilco,2028,Hombres,194459
+Xochimilco,2028,Mujeres,203928
+Álvaro Obregón,2029,Hombres,350162
+Álvaro Obregón,2029,Mujeres,384483
+Azcapotzalco,2029,Hombres,191615
+Azcapotzalco,2029,Mujeres,217499
+Benito Juárez,2029,Hombres,201953
+Benito Juárez,2029,Mujeres,240996
+Coyoacán,2029,Hombres,290445
+Coyoacán,2029,Mujeres,331662
+Cuajimalpa de Morelos,2029,Hombres,90904
+Cuajimalpa de Morelos,2029,Mujeres,97020
+Cuauhtémoc,2029,Hombres,258265
+Cuauhtémoc,2029,Mujeres,289496
+Gustavo A. Madero,2029,Hombres,556418
+Gustavo A. Madero,2029,Mujeres,606617
+Iztacalco,2029,Hombres,185096
+Iztacalco,2029,Mujeres,206642
+Iztapalapa,2029,Hombres,840238
+Iztapalapa,2029,Mujeres,892452
+La Magdalena Contreras,2029,Hombres,113473
+La Magdalena Contreras,2029,Mujeres,122453
+Miguel Hidalgo,2029,Hombres,175491
+Miguel Hidalgo,2029,Mujeres,206152
+Milpa Alta,2029,Hombres,63348
+Milpa Alta,2029,Mujeres,65819
+Tláhuac,2029,Hombres,165459
+Tláhuac,2029,Mujeres,177290
+Tlalpan,2029,Hombres,314084
+Tlalpan,2029,Mujeres,342974
+Venustiano Carranza,2029,Hombres,203150
+Venustiano Carranza,2029,Mujeres,230791
+Xochimilco,2029,Hombres,192736
+Xochimilco,2029,Mujeres,202334
+Álvaro Obregón,2030,Hombres,347824
+Álvaro Obregón,2030,Mujeres,381918
+Azcapotzalco,2030,Hombres,192482
+Azcapotzalco,2030,Mujeres,218508
+Benito Juárez,2030,Hombres,200299
+Benito Juárez,2030,Mujeres,240423
+Coyoacán,2030,Hombres,291314
+Coyoacán,2030,Mujeres,333194
+Cuajimalpa de Morelos,2030,Hombres,89395
+Cuajimalpa de Morelos,2030,Mujeres,95154
+Cuauhtémoc,2030,Hombres,257048
+Cuauhtémoc,2030,Mujeres,289137
+Gustavo A. Madero,2030,Hombres,556795
+Gustavo A. Madero,2030,Mujeres,607472
+Iztacalco,2030,Hombres,185109
+Iztacalco,2030,Mujeres,206728
+Iztapalapa,2030,Hombres,836196
+Iztapalapa,2030,Mujeres,887511
+La Magdalena Contreras,2030,Hombres,112563
+La Magdalena Contreras,2030,Mujeres,121472
+Miguel Hidalgo,2030,Hombres,174803
+Miguel Hidalgo,2030,Mujeres,205987
+Milpa Alta,2030,Hombres,62025
+Milpa Alta,2030,Mujeres,64312
+Tláhuac,2030,Hombres,163464
+Tláhuac,2030,Mujeres,174864
+Tlalpan,2030,Hombres,311017
+Tlalpan,2030,Mujeres,339570
+Venustiano Carranza,2030,Hombres,203588
+Venustiano Carranza,2030,Mujeres,231633
+Xochimilco,2030,Hombres,190949
+Xochimilco,2030,Mujeres,200666
+Álvaro Obregón,2031,Hombres,344791.8038
+Álvaro Obregón,2031,Mujeres,380766.1962
+Azcapotzalco,2031,Hombres,187979.0757
+Azcapotzalco,2031,Mujeres,223493.9243
+Benito Juárez,2031,Hombres,154040.0736
+Benito Juárez,2031,Mujeres,285212.9264
+Coyoacán,2031,Hombres,268198.6272
+Coyoacán,2031,Mujeres,356739.3728
+Cuajimalpa de Morelos,2031,Hombres,98523.42517
+Cuajimalpa de Morelos,2031,Mujeres,83693.57483
+Cuauhtémoc,2031,Hombres,220670.8171
+Cuauhtémoc,2031,Mujeres,323936.1829
+Gustavo A. Madero,2031,Hombres,533935.4134
+Gustavo A. Madero,2031,Mujeres,629021.5866
+Iztacalco,2031,Hombres,180527.7697
+Iztacalco,2031,Mujeres,210797.2303
+Iztapalapa,2031,Hombres,844156.2577
+Iztapalapa,2031,Mujeres,869575.7423
+La Magdalena Contreras,2031,Hombres,111934.1261
+La Magdalena Contreras,2031,Mujeres,120516.8739
+Miguel Hidalgo,2031,Hombres,152619.5617
+Miguel Hidalgo,2031,Mujeres,227283.4383
+Milpa Alta,2031,Hombres,65584.98953
+Milpa Alta,2031,Mujeres,58836.01047
+Tláhuac,2031,Hombres,171100.4638
+Tláhuac,2031,Mujeres,163753.5362
+Tlalpan,2031,Hombres,307034.1571
+Tlalpan,2031,Mujeres,338525.8429
+Venustiano Carranza,2031,Hombres,188339.3976
+Venustiano Carranza,2031,Mujeres,247028.6024
+Xochimilco,2031,Hombres,178878.6103
+Xochimilco,2031,Mujeres,209680.3897
+Álvaro Obregón,2032,Hombres,342725.5944
+Álvaro Obregón,2032,Mujeres,378484.4056
+Azcapotzalco,2032,Hombres,188151.306
+Azcapotzalco,2032,Mujeres,223698.694
+Benito Juárez,2032,Hombres,153486.6904
+Benito Juárez,2032,Mujeres,284188.3096
+Coyoacán,2032,Hombres,268313.6422
+Coyoacán,2032,Mujeres,356892.3578
+Cuajimalpa de Morelos,2032,Hombres,97252.79702
+Cuajimalpa de Morelos,2032,Mujeres,82614.20298
+Cuauhtémoc,2032,Hombres,219976.3167
+Cuauhtémoc,2032,Mujeres,322916.6833
+Gustavo A. Madero,2032,Hombres,533196.6912
+Gustavo A. Madero,2032,Mujeres,628151.3088
+Iztacalco,2032,Hombres,180244.9779
+Iztacalco,2032,Mujeres,210467.0221
+Iztapalapa,2032,Hombres,838996.4446
+Iztapalapa,2032,Mujeres,864260.5554
+La Magdalena Contreras,2032,Hombres,111147.7736
+La Magdalena Contreras,2032,Mujeres,119670.2264
+Miguel Hidalgo,2032,Hombres,152224.6582
+Miguel Hidalgo,2032,Mujeres,226695.3418
+Milpa Alta,2032,Hombres,64572.91617
+Milpa Alta,2032,Mujeres,57928.08383
+Tláhuac,2032,Hombres,169299.2934
+Tláhuac,2032,Mujeres,162029.7066
+Tlalpan,2032,Hombres,304583.3439
+Tlalpan,2032,Mujeres,335823.6561
+Venustiano Carranza,2032,Hombres,188354.5385
+Venustiano Carranza,2032,Mujeres,247048.4615
+Xochimilco,2032,Hombres,177436.7499
+Xochimilco,2032,Mujeres,207990.2501
+Álvaro Obregón,2033,Hombres,340582.8763
+Álvaro Obregón,2033,Mujeres,376118.1237
+Azcapotzalco,2033,Hombres,188274.654
+Azcapotzalco,2033,Mujeres,223845.346
+Benito Juárez,2033,Hombres,152895.433
+Benito Juárez,2033,Mujeres,283093.567
+Coyoacán,2033,Hombres,268358.704
+Coyoacán,2033,Mujeres,356952.296
+Cuajimalpa de Morelos,2033,Hombres,95974.05848
+Cuajimalpa de Morelos,2033,Mujeres,81527.94152
+Cuauhtémoc,2033,Hombres,219226.71
+Cuauhtémoc,2033,Mujeres,321816.29
+Gustavo A. Madero,2033,Hombres,532319.7744
+Gustavo A. Madero,2033,Mujeres,627118.2256
+Iztacalco,2033,Hombres,179915.5922
+Iztacalco,2033,Mujeres,210082.4078
+Iztapalapa,2033,Hombres,834263.7015
+Iztapalapa,2033,Mujeres,859385.2985
+La Magdalena Contreras,2033,Hombres,110338.3072
+La Magdalena Contreras,2033,Mujeres,118798.6928
+Miguel Hidalgo,2033,Hombres,151791.1884
+Miguel Hidalgo,2033,Mujeres,226049.8116
+Milpa Alta,2033,Hombres,63560.31569
+Milpa Alta,2033,Mujeres,57019.68431
+Tláhuac,2033,Hombres,167474.1073
+Tláhuac,2033,Mujeres,160282.8927
+Tlalpan,2033,Hombres,302072.6039
+Tlalpan,2033,Mujeres,333055.3961
+Venustiano Carranza,2033,Hombres,188320.3633
+Venustiano Carranza,2033,Mujeres,247003.6367
+Xochimilco,2033,Hombres,175960.3623
+Xochimilco,2033,Mujeres,206259.6377
+Álvaro Obregón,2034,Hombres,338365.0752
+Álvaro Obregón,2034,Mujeres,373668.9248
+Azcapotzalco,2034,Hombres,188348.2059
+Azcapotzalco,2034,Mujeres,223932.7941
+Benito Juárez,2034,Hombres,152266.3015
+Benito Juárez,2034,Mujeres,281928.6985
+Coyoacán,2034,Hombres,268332.9544
+Coyoacán,2034,Mujeres,356918.0456
+Cuajimalpa de Morelos,2034,Hombres,94686.66886
+Cuajimalpa de Morelos,2034,Mujeres,80434.33114
+Cuauhtémoc,2034,Hombres,218421.9972
+Cuauhtémoc,2034,Mujeres,320635.0028
+Gustavo A. Madero,2034,Hombres,531304.6627
+Gustavo A. Madero,2034,Mujeres,625922.3373
+Iztacalco,2034,Hombres,179539.6129
+Iztacalco,2034,Mujeres,209643.3871
+Iztapalapa,2034,Hombres,827957.1538
+Iztapalapa,2034,Mujeres,852888.8462
+La Magdalena Contreras,2034,Hombres,109505.727
+La Magdalena Contreras,2034,Mujeres,117902.273
+Miguel Hidalgo,2034,Hombres,151319.1521
+Miguel Hidalgo,2034,Mujeres,225346.8479
+Milpa Alta,2034,Hombres,62547.18808
+Milpa Alta,2034,Mujeres,56110.81192
+Tláhuac,2034,Hombres,165624.3947
+Tláhuac,2034,Mujeres,158512.6053
+Tlalpan,2034,Hombres,299504.3152
+Tlalpan,2034,Mujeres,330223.6848
+Venustiano Carranza,2034,Hombres,188236.4392
+Venustiano Carranza,2034,Mujeres,246893.5608
+Xochimilco,2034,Hombres,174450.3681
+Xochimilco,2034,Mujeres,204489.6319
+Álvaro Obregón,2035,Hombres,336074.0919
+Álvaro Obregón,2035,Mujeres,371138.9081
+Azcapotzalco,2035,Hombres,188373.3323
+Azcapotzalco,2035,Mujeres,223962.6677
+Benito Juárez,2035,Hombres,151600.6987
+Benito Juárez,2035,Mujeres,280696.3013
+Coyoacán,2035,Hombres,268238.1099
+Coyoacán,2035,Mujeres,356791.8901
+Cuajimalpa de Morelos,2035,Hombres,93392.79092
+Cuajimalpa de Morelos,2035,Mujeres,79335.20908
+Cuauhtémoc,2035,Hombres,217564.2041
+Cuauhtémoc,2035,Mujeres,319375.7959
+Gustavo A. Madero,2035,Hombres,530154.111
+Gustavo A. Madero,2035,Mujeres,624566.889
+Iztacalco,2035,Hombres,179117.9624
+Iztacalco,2035,Mujeres,209151.0376
+Iztapalapa,2035,Hombres,822086.5426
+Iztapalapa,2035,Mujeres,846841.4574
+La Magdalena Contreras,2035,Hombres,108651.4775
+La Magdalena Contreras,2035,Mujeres,116982.5225
+Miguel Hidalgo,2035,Hombres,150809.7547
+Miguel Hidalgo,2035,Mujeres,224588.2453
+Milpa Alta,2035,Hombres,61534.06047
+Milpa Alta,2035,Mujeres,55201.93953
+Tláhuac,2035,Hombres,163752.7103
+Tláhuac,2035,Mujeres,156721.2897
+Tlalpan,2035,Hombres,296880.3802
+Tlalpan,2035,Mujeres,327330.6198
+Venustiano Carranza,2035,Hombres,188104.0642
+Venustiano Carranza,2035,Mujeres,246719.9358
+Xochimilco,2035,Hombres,172908.6088
+Xochimilco,2035,Mujeres,202682.3912
