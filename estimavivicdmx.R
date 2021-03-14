@@ -229,6 +229,35 @@ Fuente: ")%>%
   as_image(file="estimacdmx/tablacdmxcrec.png")
 
 
+
+consol%>%
+  select(year,pob)%>%
+  filter(year>=2010)%>%
+  
+  ggplot(.,aes(year,pob))+
+  geom_line(color="#3cb050",size=3)+ 
+  scale_y_continuous("Número de viviendas",labels=comma)+
+  scale_x_continuous("Años",
+                     breaks = seq(from = 2000, to = 2035, by = 5))+
+  theme_minimal()+
+  labs(
+    title = "Ciudad de México. Población",
+    subtitle = "2010-2035",
+    caption = "Fuente: Elaboración propia con datos de CONAPO. Proyecciones de población"
+  )+
+  theme(plot.title = element_text(hjust = 0, size=25,face="bold"),
+        plot.subtitle = element_text(hjust = 0, size=15, face="italic"),
+        plot.caption = element_text(hjust = 0,size=12),
+        legend.position = "bottom",
+        axis.text.x = element_text(angle = 90, vjust = 0.5),
+        text=element_text(size=20))
+##Salvar la gráfica
+
+ggsave("estimacdmx/poblacdmx.png", height=10, width=20, units='in', dpi=300)
+
+
+
+
 #Procedimiento para estimar parque de alcaldías: Modelo 1----
 #Supuesto: Participación de 2020 invariable
 
@@ -559,7 +588,7 @@ ggsave("estimacdmx/acaldía2.png",
 
 ##Tabla parque habitacional alcaldías----
 
-consolalc<-consolalc%>%
+consoltabla<-consolalc%>%
   select(year,nom_mun,vivialc)%>%
   gather(key, vivialc, -nom_mun, -year)%>% 
   filter(year==2020 | year==2025 |year==2030 | year==2035)%>%
@@ -572,8 +601,8 @@ consolalc<-consolalc%>%
         diferencia=vivialc_2035-vivialc_2020)
 #Filas de totales
 
-consolalc<-consolalc%>%
-  bind_rows(consolalc%>%
+consoltabla<-consoltabla%>%
+  bind_rows(consoltabla%>%
               summarise(vivialc_2020=sum(vivialc_2020),
                         vivialc_2025=sum(vivialc_2025),
                         vivialc_2030=sum(vivialc_2030),
@@ -597,7 +626,7 @@ arrange(desc(diferencia))%>%
 
 
 
-consolalc%>%
+consoltabla%>%
 
   ##Crear tabla
   kable(caption='<h1 style="color:black;font-size:20px;"><b>Viviendas particulares habitadas por alcaldía</b></h><br>
